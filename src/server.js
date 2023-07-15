@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 // Rota para lidar com o download do vídeo
-app.post('/download', async (req, res) => {
+app.post('/YTDweb/download', async (req, res) => {
   try {
     const videoUrl = req.body.videoUrl;
     if (!ytdl.validateURL(videoUrl)) {
